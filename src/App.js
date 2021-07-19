@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./components/header/Header"
 import Sidebar from "./components/sidebar/Sidebar"
 import "./App.css"
+import Home from "./pages/Home"
 
 function App() {
 	return (
@@ -9,7 +10,7 @@ function App() {
 			<Header />
 			<div className="container">
 				<Sidebar />
-				<div className="others">other pages</div>
+				<Home />
 			</div>
 		</div>
 	)
