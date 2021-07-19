@@ -2,6 +2,12 @@
 	flex: 4;
 }
 
+.productsTitleContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .productListItem{
 	display: flex;
 	align-items: center;

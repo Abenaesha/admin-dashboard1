@@ -17,7 +17,7 @@ export default function ProductList() {
 		{
 			field: "product",
 			headerName: "Product",
-			width: 200,
+			width: 150,
 			renderCell: (params) => {
 				return (
 					<div className="productListItem">
@@ -27,7 +27,7 @@ export default function ProductList() {
 				)
 			},
 		},
-		{field: "stock", headerName: "Stock", width: 200},
+		{field: "stock", headerName: "Stock", width: 110},
 		{
 			field: "status",
 			headerName: "Status",
@@ -36,7 +36,7 @@ export default function ProductList() {
 		{
 			field: "price",
 			headerName: "Price",
-			width: 160,
+			width: 110,
 		},
 		{
 			field: "action",
@@ -60,6 +60,12 @@ export default function ProductList() {
 
 	return (
 		<div className="productList">
+			<div className="productsTitleContainer">
+				<h1 className="productTitle">Product List</h1>
+				<Link to="/newproduct">
+					<button className="productAddButton">Create</button>
+				</Link>
+			</div>
 			<DataGrid
 				rows={data}
 				disableSelectionOnClick
